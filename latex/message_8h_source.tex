@@ -1,0 +1,60 @@
+\doxysection{message.\+h}
+\hypertarget{message_8h_source}{}\label{message_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MESSAGE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MESSAGE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <ctime>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <compare>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std::chrono;}
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std::literals::chrono\_literals;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_message}{Message}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ std::string\ message;}
+\DoxyCodeLine{00017\ \ \ \ \ std::string\ chat;}
+\DoxyCodeLine{00018\ \ \ \ \ time\_point<system\_clock>\ time;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_message_a4fc4f717b634e66070366cb7722d7761}{Message}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_message_a4fc4f717b634e66070366cb7722d7761}{Message}}(\textcolor{keyword}{const}\ std::string\ \&pre\_message,\ \textcolor{keyword}{const}\ std::string\ \&chat\_name,\ time\_point<system\_clock>\ time\_msg);}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_message_a4fc4f717b634e66070366cb7722d7761}{Message}}(\textcolor{keyword}{const}\ std::string\ \&pre\_message,\ \textcolor{keyword}{const}\ std::string\ \&chat\_name);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_message_a7331af4fda5cbeecffd2b550ba22060d}{set\_message}}(\textcolor{keyword}{const}\ std::string\ \&pre\_message);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_message_a64286edcfaf4f9835960756950be2c18}{set\_chat}}(\textcolor{keyword}{const}\ std::string\ \&chat\_name);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_message_a520600c8959b5e3c9e31ef68b2ea67ad}{set\_time}}(time\_point<system\_clock>\ time\_msg);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{class_message_a18e93df7c6635138e34d59295acc3410}{get\_message}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ message;\ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{class_message_a0968690faeb5b2c9a03369ed40c9edbf}{get\_chat}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ chat;\ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \ \ time\_point<system\_clock>\ \mbox{\hyperlink{class_message_ac0f4d1b926db6f56e910b84e68a83d0e}{get\_timeline}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ time;\ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{friend}\ std::istream\ \&\mbox{\hyperlink{class_message_aeef4b69ecc492c885b5f112053700d9e}{operator>>}}(std::istream\ \&in,\ \mbox{\hyperlink{class_message}{Message}}\ \&msg);}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\ \&\mbox{\hyperlink{class_message_a5629bfd7eb7fb2bacbcb9f3af401a867}{operator<<}}(std::ostream\ \&out,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_message}{Message}}\ \&msg);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_message}{Message}}\ \mbox{\hyperlink{class_message_a370cee8ed391924c6e8beca8985585b9}{add}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_message}{Message}}\ \&rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00051\ \ \ \ \ std::weak\_ordering\ \mbox{\hyperlink{class_message_ab80106280c5f08a80178eb4ec11f198c}{operator<=>}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_message}{Message}}\ \&rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_message_a982d757a428c296e2a5a6af7ab87c244}{find\_word}}(\textcolor{keyword}{const}\ std::string\ \&word)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_message_a027e655f527dc3694ae6a2a6d442f559}{output\_message}}();}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_message_aa9d453d2fc51caaf7dbe5738bac05f8a}{input\_message}}();}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ std::chrono::system\_clock::time\_point\ input\_time(std::istream\ \&in);}
+\DoxyCodeLine{00059\ time\_point<system\_clock>\ input\_time(std::istream\ \&in);}
+\DoxyCodeLine{00060\ \textcolor{keywordtype}{bool}\ parse\_time(\textcolor{keyword}{const}\ std::string\ \&input,\ std::chrono::system\_clock::time\_point\ \&time);}
+\DoxyCodeLine{00061\ \textcolor{keywordtype}{bool}\ getint(std::istream\ \&in,\ \textcolor{keywordtype}{int}\ \&option,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ r);}
+\DoxyCodeLine{00062\ \textcolor{keywordtype}{bool}\ getint(\textcolor{keywordtype}{int}\ \&option,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ r);}
+\DoxyCodeLine{00063\ std::vector<std::string>\ split(\textcolor{keyword}{const}\ std::string\ \&str,\ \textcolor{keyword}{const}\ std::string\ \&delim);}
+\DoxyCodeLine{00064\ \textcolor{keywordtype}{bool}\ check\_input(std::istream\ \&in);}
+\DoxyCodeLine{00065\ \textcolor{keywordtype}{bool}\ check\_input(std::string\ \&\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

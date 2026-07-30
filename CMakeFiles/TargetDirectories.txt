@@ -1,0 +1,8 @@
+C:/lab/iwtd_oop/lab2/CMakeFiles/messages.dir
+C:/lab/iwtd_oop/lab2/CMakeFiles/lab2.dir
+C:/lab/iwtd_oop/lab2/CMakeFiles/tests.dir
+C:/lab/iwtd_oop/lab2/CMakeFiles/run_tests.dir
+C:/lab/iwtd_oop/lab2/CMakeFiles/coverage.dir
+C:/lab/iwtd_oop/lab2/CMakeFiles/test.dir
+C:/lab/iwtd_oop/lab2/CMakeFiles/edit_cache.dir
+C:/lab/iwtd_oop/lab2/CMakeFiles/rebuild_cache.dir

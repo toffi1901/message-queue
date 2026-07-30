@@ -1,0 +1,278 @@
+\doxysection{Message Class Reference}
+\hypertarget{class_message}{}\label{class_message}\index{Message@{Message}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_message_a4fc4f717b634e66070366cb7722d7761}\label{class_message_a4fc4f717b634e66070366cb7722d7761} 
+{\bfseries Message} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_message_af3ae53d58ad1113008b8e608d2c64f62}{Message}} (const std\+::string \&pre\+\_\+message, const std\+::string \&chat\+\_\+name, time\+\_\+point$<$ system\+\_\+clock $>$ time\+\_\+msg)
+\begin{DoxyCompactList}\small\item\em Initialize a \doxylink{class_message}{Message} with custom input that includes time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_message_a9f1c840684d4bedae667f9f2b7dd9cf1}{Message}} (const std\+::string \&pre\+\_\+message, const std\+::string \&chat\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Initialize a \doxylink{class_message}{Message} with custom input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_message_a7331af4fda5cbeecffd2b550ba22060d}{set\+\_\+message}} (const std\+::string \&pre\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Set a message in \doxylink{class_message}{Message}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_message_a64286edcfaf4f9835960756950be2c18}{set\+\_\+chat}} (const std\+::string \&chat\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Set a chat\+\_\+name in \doxylink{class_message}{Message}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_message_a520600c8959b5e3c9e31ef68b2ea67ad}{set\+\_\+time}} (time\+\_\+point$<$ system\+\_\+clock $>$ time\+\_\+msg)
+\begin{DoxyCompactList}\small\item\em Set a send\+\_\+time of \doxylink{class_message}{Message}. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_message_a18e93df7c6635138e34d59295acc3410}{get\+\_\+message}} () const
+\begin{DoxyCompactList}\small\item\em function which get message \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_message_a0968690faeb5b2c9a03369ed40c9edbf}{get\+\_\+chat}} () const
+\begin{DoxyCompactList}\small\item\em function which get name of chat \end{DoxyCompactList}\item 
+time\+\_\+point$<$ system\+\_\+clock $>$ \mbox{\hyperlink{class_message_ac0f4d1b926db6f56e910b84e68a83d0e}{get\+\_\+timeline}} () const
+\begin{DoxyCompactList}\small\item\em function which get time \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_message}{Message}} \mbox{\hyperlink{class_message_a370cee8ed391924c6e8beca8985585b9}{add}} (const \mbox{\hyperlink{class_message}{Message}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em operator which adds values \end{DoxyCompactList}\item 
+std\+::weak\+\_\+ordering \mbox{\hyperlink{class_message_ab80106280c5f08a80178eb4ec11f198c}{operator$<$=$>$}} (const \mbox{\hyperlink{class_message}{Message}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em equalness operator \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_message_a982d757a428c296e2a5a6af7ab87c244}{find\+\_\+word}} (const std\+::string \&word) const
+\begin{DoxyCompactList}\small\item\em find message by word \end{DoxyCompactList}\item 
+\Hypertarget{class_message_a027e655f527dc3694ae6a2a6d442f559}\label{class_message_a027e655f527dc3694ae6a2a6d442f559} 
+void {\bfseries output\+\_\+message} ()
+\begin{DoxyCompactList}\small\item\em function for output \doxylink{class_message}{Message} \end{DoxyCompactList}\item 
+\Hypertarget{class_message_aa9d453d2fc51caaf7dbe5738bac05f8a}\label{class_message_aa9d453d2fc51caaf7dbe5738bac05f8a} 
+void {\bfseries input\+\_\+message} ()
+\begin{DoxyCompactList}\small\item\em function for input \doxylink{class_message}{Message} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \mbox{\hyperlink{class_message_aeef4b69ecc492c885b5f112053700d9e}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_message}{Message}} \&msg)
+\begin{DoxyCompactList}\small\item\em input \doxylink{class_message}{Message} operator \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{class_message_a5629bfd7eb7fb2bacbcb9f3af401a867}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_message}{Message}} \&msg)
+\begin{DoxyCompactList}\small\item\em output \doxylink{class_message}{Message} operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_message_af3ae53d58ad1113008b8e608d2c64f62}\index{Message@{Message}!Message@{Message}}
+\index{Message@{Message}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{Message()}{Message()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_message_af3ae53d58ad1113008b8e608d2c64f62} 
+Message\+::\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{pre\+\_\+message}{, }\item[{const std\+::string \&}]{chat\+\_\+name}{, }\item[{time\+\_\+point$<$ system\+\_\+clock $>$}]{time\+\_\+msg}{}\end{DoxyParamCaption})}
+
+
+
+Initialize a \doxylink{class_message}{Message} with custom input that includes time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pre\+\_\+message} & The string with message user input \\
+\hline
+{\em chat\+\_\+name} & The string with chat name user input \\
+\hline
+{\em time\+\_\+msg} & The time user input \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_message_a9f1c840684d4bedae667f9f2b7dd9cf1}\index{Message@{Message}!Message@{Message}}
+\index{Message@{Message}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{Message()}{Message()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_message_a9f1c840684d4bedae667f9f2b7dd9cf1} 
+Message\+::\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{pre\+\_\+message}{, }\item[{const std\+::string \&}]{chat\+\_\+name}{}\end{DoxyParamCaption})}
+
+
+
+Initialize a \doxylink{class_message}{Message} with custom input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pre\+\_\+message} & The string with message user input \\
+\hline
+{\em chat\+\_\+name} & The string with chat name user input \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_message_a370cee8ed391924c6e8beca8985585b9}\index{Message@{Message}!add@{add}}
+\index{add@{add}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_message_a370cee8ed391924c6e8beca8985585b9} 
+\mbox{\hyperlink{class_message}{Message}} Message\+::add (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_message}{Message}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+
+
+operator which adds values 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & the second operand \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error()} & if chats aren\`{}t equal. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+New instance of the class 
+\end{DoxyReturn}
+\Hypertarget{class_message_a982d757a428c296e2a5a6af7ab87c244}\index{Message@{Message}!find\_word@{find\_word}}
+\index{find\_word@{find\_word}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{find\_word()}{find\_word()}}
+{\footnotesize\ttfamily \label{class_message_a982d757a428c296e2a5a6af7ab87c244} 
+bool Message\+::find\+\_\+word (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{word}{}\end{DoxyParamCaption}) const}
+
+
+
+find message by word 
+
+
+\begin{DoxyParams}{Parameters}
+{\em word} & the string with word which message is being searched for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the message was found, false if it\`{}s not. 
+\end{DoxyReturn}
+\Hypertarget{class_message_a0968690faeb5b2c9a03369ed40c9edbf}\index{Message@{Message}!get\_chat@{get\_chat}}
+\index{get\_chat@{get\_chat}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{get\_chat()}{get\_chat()}}
+{\footnotesize\ttfamily \label{class_message_a0968690faeb5b2c9a03369ed40c9edbf} 
+const std\+::string \& Message\+::get\+\_\+chat (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+function which get name of chat 
+
+\begin{DoxyReturn}{Returns}
+a string with a name of chat 
+\end{DoxyReturn}
+\Hypertarget{class_message_a18e93df7c6635138e34d59295acc3410}\index{Message@{Message}!get\_message@{get\_message}}
+\index{get\_message@{get\_message}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{get\_message()}{get\_message()}}
+{\footnotesize\ttfamily \label{class_message_a18e93df7c6635138e34d59295acc3410} 
+const std\+::string \& Message\+::get\+\_\+message (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+function which get message 
+
+\begin{DoxyReturn}{Returns}
+a string with a message 
+\end{DoxyReturn}
+\Hypertarget{class_message_ac0f4d1b926db6f56e910b84e68a83d0e}\index{Message@{Message}!get\_timeline@{get\_timeline}}
+\index{get\_timeline@{get\_timeline}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{get\_timeline()}{get\_timeline()}}
+{\footnotesize\ttfamily \label{class_message_ac0f4d1b926db6f56e910b84e68a83d0e} 
+time\+\_\+point$<$ system\+\_\+clock $>$ Message\+::get\+\_\+timeline (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+function which get time 
+
+\begin{DoxyReturn}{Returns}
+time of sending message 
+\end{DoxyReturn}
+\Hypertarget{class_message_ab80106280c5f08a80178eb4ec11f198c}\index{Message@{Message}!operator$<$=$>$@{operator$<$=$>$}}
+\index{operator$<$=$>$@{operator$<$=$>$}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{operator$<$=$>$()}{operator<=>()}}
+{\footnotesize\ttfamily \label{class_message_ab80106280c5f08a80178eb4ec11f198c} 
+std\+::weak\+\_\+ordering Message\+::operator$<$=$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_message}{Message}} \&}]{rhs}{}\end{DoxyParamCaption}) const}
+
+
+
+equalness operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & the second operand \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+equalness of elements by chat names and sending time. 
+\end{DoxyReturn}
+\Hypertarget{class_message_a64286edcfaf4f9835960756950be2c18}\index{Message@{Message}!set\_chat@{set\_chat}}
+\index{set\_chat@{set\_chat}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{set\_chat()}{set\_chat()}}
+{\footnotesize\ttfamily \label{class_message_a64286edcfaf4f9835960756950be2c18} 
+void Message\+::set\+\_\+chat (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{chat\+\_\+name}{}\end{DoxyParamCaption})}
+
+
+
+Set a chat\+\_\+name in \doxylink{class_message}{Message}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chat\+\_\+name} & A string with a chat\+\_\+name that is assigned to a class element \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_message_a7331af4fda5cbeecffd2b550ba22060d}\index{Message@{Message}!set\_message@{set\_message}}
+\index{set\_message@{set\_message}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{set\_message()}{set\_message()}}
+{\footnotesize\ttfamily \label{class_message_a7331af4fda5cbeecffd2b550ba22060d} 
+void Message\+::set\+\_\+message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg}{}\end{DoxyParamCaption})}
+
+
+
+Set a message in \doxylink{class_message}{Message}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & A string with a message that is assigned to a class element \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_message_a520600c8959b5e3c9e31ef68b2ea67ad}\index{Message@{Message}!set\_time@{set\_time}}
+\index{set\_time@{set\_time}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{set\_time()}{set\_time()}}
+{\footnotesize\ttfamily \label{class_message_a520600c8959b5e3c9e31ef68b2ea67ad} 
+void Message\+::set\+\_\+time (\begin{DoxyParamCaption}\item[{time\+\_\+point$<$ system\+\_\+clock $>$}]{send\+\_\+time}{}\end{DoxyParamCaption})}
+
+
+
+Set a send\+\_\+time of \doxylink{class_message}{Message}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em send\+\_\+time} & A time\+\_\+point when the message was sent \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_message_a5629bfd7eb7fb2bacbcb9f3af401a867}\index{Message@{Message}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_message_a5629bfd7eb7fb2bacbcb9f3af401a867} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{, }\item[{const \mbox{\hyperlink{class_message}{Message}} \&}]{msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+output \doxylink{class_message}{Message} operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the output stream. \\
+\hline
+{\em msg} & output \doxylink{class_message}{Message}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the output stream. 
+\end{DoxyReturn}
+\Hypertarget{class_message_aeef4b69ecc492c885b5f112053700d9e}\index{Message@{Message}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily \label{class_message_aeef4b69ecc492c885b5f112053700d9e} 
+std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in}{, }\item[{\mbox{\hyperlink{class_message}{Message}} \&}]{msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+input \doxylink{class_message}{Message} operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the input stream. \\
+\hline
+{\em msg} & input \doxylink{class_message}{Message}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the input stream. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+message.\+h\item 
+in\+\_\+out\+\_\+put.\+cpp\item 
+message.\+cpp\end{DoxyCompactItemize}

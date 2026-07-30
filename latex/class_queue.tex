@@ -1,0 +1,442 @@
+\doxysection{Queue Class Reference}
+\hypertarget{class_queue}{}\label{class_queue}\index{Queue@{Queue}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_queue_a8b8f37f2ffed107ba7d2328c40f2641a}\label{class_queue_a8b8f37f2ffed107ba7d2328c40f2641a} 
+{\bfseries Queue} (const \mbox{\hyperlink{class_queue}{Queue}} \&)
+\begin{DoxyCompactList}\small\item\em the copying constructor \end{DoxyCompactList}\item 
+\Hypertarget{class_queue_a99f56a2e6b8ded83f9755bbc5e80ce83}\label{class_queue_a99f56a2e6b8ded83f9755bbc5e80ce83} 
+{\bfseries Queue} (\mbox{\hyperlink{class_queue}{Queue}} \&\&queue) noexcept
+\begin{DoxyCompactList}\small\item\em the moving constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_queue}{Queue}} \& \mbox{\hyperlink{class_queue_ab68e712b015695c45ccd35c1ddbc7b4a}{operator=}} (\mbox{\hyperlink{class_queue}{Queue}} \&\&queue) noexcept
+\begin{DoxyCompactList}\small\item\em the moving operator \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_queue}{Queue}} \& \mbox{\hyperlink{class_queue_a6d419c002771df94087c32cbd094ca01}{operator+=}} (const \mbox{\hyperlink{class_message}{Message}} \&rsh)
+\begin{DoxyCompactList}\small\item\em add new \doxylink{class_message}{Message} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_queue}{Queue}} \mbox{\hyperlink{class_queue_ae28fb9b8935aa11e9746a5b4cdaa8a87}{operator\mbox{[}$\,$\mbox{]}}} (const std\+::string \&chat)
+\begin{DoxyCompactList}\small\item\em combine messages from the same chat into new queue \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_queue}{Queue}} \& \mbox{\hyperlink{class_queue_a9ecdaf2ca43a075eef1e93057fc7e339}{operator=}} (const \mbox{\hyperlink{class_queue}{Queue}} \&queue)
+\begin{DoxyCompactList}\small\item\em Copying an instance of a complex class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_message}{Message}} \mbox{\hyperlink{class_queue_a18f437f8fc3da503cc554fefa4f120b9}{pop}} ()
+\begin{DoxyCompactList}\small\item\em Reading message. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_queue_a4b786d223a7f57f684be88713296dfd9}{get\+\_\+head}} () const
+\begin{DoxyCompactList}\small\item\em function of getting head \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_queue_accf2a200a2e8dfdfdf4d169546d180aa}{get\+\_\+tail}} () const
+\begin{DoxyCompactList}\small\item\em function of getting tail \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_queue_a45190461e94c3d48fd64def42a0ff15a}{get\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em function of getting size of queue \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_queue_a82229977796c1a703f335c7e997d4872}{get\+\_\+max\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em function of getting max size of queue array \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_message}{Message}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_queue_a546d9a23753d4f544fce3676e6fb58b4}{get\+\_\+chats}} () const
+\begin{DoxyCompactList}\small\item\em function of getting queue array with Messages \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_queue_a7ff83fbb358213bc180a8a567c5f049a}{set\+\_\+head}} (int new\+\_\+head)
+\begin{DoxyCompactList}\small\item\em function which set new head of queue \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_queue_a65f507d16c51f19af147178d8bab496a}{set\+\_\+tail}} (int new\+\_\+tail)
+\begin{DoxyCompactList}\small\item\em function which set new tail of queue \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_queue_ad52f0d3fb0ece6d43ee0477db1398c2d}{set\+\_\+size}} (int new\+\_\+size)
+\begin{DoxyCompactList}\small\item\em function which set new size of queue \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_queue_a175afd62fb1faed265f9976791828ad4}{set\+\_\+max\+\_\+size}} (int new\+\_\+size)
+\begin{DoxyCompactList}\small\item\em function which set new max size of queue \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_queue_a8ce247186a505400ea62448590463046}{set\+\_\+chats}} (const \mbox{\hyperlink{class_message}{Message}} \texorpdfstring{$\ast$}{*}new\+\_\+chats, int count)
+\begin{DoxyCompactList}\small\item\em function which set new chats-\/array \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_queue_a1b10a6a7df1e99763489430bb855c51d}{check\+\_\+queue}} ()
+\begin{DoxyCompactList}\small\item\em Check the state of queue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_queue}{Queue}} \mbox{\hyperlink{class_queue_a89a8e2647a92a36df8072aca587ca481}{reorganization}} ()
+\begin{DoxyCompactList}\small\item\em combining messages from the same chat \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_queue_a28b8833896ba8034210d8b820fda58c8}{from\+\_\+vec}} (const \mbox{\hyperlink{class_message}{Message}} \texorpdfstring{$\ast$}{*}messages, int count)
+\begin{DoxyCompactList}\small\item\em create new queue from vector of Messages \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_queue_ad7c87f71c7c4840bbcd0bcef6efdf6aa}{arrange}} ()
+\begin{DoxyCompactList}\small\item\em queue arranging \end{DoxyCompactList}\item 
+\Hypertarget{class_queue_ae93f16b8724a594a1089b89e7a77f528}\label{class_queue_ae93f16b8724a594a1089b89e7a77f528} 
+void {\bfseries input\+\_\+queue} ()
+\begin{DoxyCompactList}\small\item\em function for output \doxylink{class_queue}{Queue} \end{DoxyCompactList}\item 
+\Hypertarget{class_queue_a15587105e900c611b7ebef4109bf42f2}\label{class_queue_a15587105e900c611b7ebef4109bf42f2} 
+void {\bfseries output\+\_\+queue} ()
+\item 
+\Hypertarget{class_queue_a9c28bbdbbee409e38cce00a90dab89bf}\label{class_queue_a9c28bbdbbee409e38cce00a90dab89bf} 
+void {\bfseries copy\+\_\+vector} (const \mbox{\hyperlink{class_queue}{Queue}} \&queue)
+\item 
+const \mbox{\hyperlink{class_message}{Message}} \mbox{\hyperlink{class_queue_a72b53b6e19e4a39012adb38385c4fbda}{find\+\_\+message}} (const std\+::string \&word)
+\begin{DoxyCompactList}\small\item\em find message by word \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_queue_a62c5106a0b3f0e418795867f2570e75a}{operator$<$$<$}} (std\+::ostream \&out, \mbox{\hyperlink{class_queue}{Queue}} \&queue)
+\begin{DoxyCompactList}\small\item\em Output queue class operator. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{class_queue_a8b1d33c58d371cee3bfdc3e4af8d320c}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_queue}{Queue}} \&queue)
+\begin{DoxyCompactList}\small\item\em Input queue class operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_queue_ad7c87f71c7c4840bbcd0bcef6efdf6aa}\index{Queue@{Queue}!arrange@{arrange}}
+\index{arrange@{arrange}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{arrange()}{arrange()}}
+{\footnotesize\ttfamily \label{class_queue_ad7c87f71c7c4840bbcd0bcef6efdf6aa} 
+void Queue\+::arrange (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+queue arranging 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range()} & if queue empty \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_queue_a1b10a6a7df1e99763489430bb855c51d}\index{Queue@{Queue}!check\_queue@{check\_queue}}
+\index{check\_queue@{check\_queue}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{check\_queue()}{check\_queue()}}
+{\footnotesize\ttfamily \label{class_queue_a1b10a6a7df1e99763489430bb855c51d} 
+int Queue\+::check\+\_\+queue (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Check the state of queue. 
+
+\begin{DoxyReturn}{Returns}
+EMPTY if the queue is empty 
+
+FULL if the queue is full 
+
+HALF\+\_\+\+FULL if the queue is half-\/full 
+\end{DoxyReturn}
+\Hypertarget{class_queue_a72b53b6e19e4a39012adb38385c4fbda}\index{Queue@{Queue}!find\_message@{find\_message}}
+\index{find\_message@{find\_message}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{find\_message()}{find\_message()}}
+{\footnotesize\ttfamily \label{class_queue_a72b53b6e19e4a39012adb38385c4fbda} 
+const \mbox{\hyperlink{class_message}{Message}} Queue\+::find\+\_\+message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{word}{}\end{DoxyParamCaption})}
+
+
+
+find message by word 
+
+
+\begin{DoxyParams}{Parameters}
+{\em word} & the word which message is being searched for \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error()} & if the message isn\`{}t found \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+found message 
+\end{DoxyReturn}
+\Hypertarget{class_queue_a28b8833896ba8034210d8b820fda58c8}\index{Queue@{Queue}!from\_vec@{from\_vec}}
+\index{from\_vec@{from\_vec}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{from\_vec()}{from\_vec()}}
+{\footnotesize\ttfamily \label{class_queue_a28b8833896ba8034210d8b820fda58c8} 
+void Queue\+::from\+\_\+vec (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_message}{Message}} \texorpdfstring{$\ast$}{*}}]{messages}{, }\item[{int}]{count}{}\end{DoxyParamCaption})}
+
+
+
+create new queue from vector of Messages 
+
+
+\begin{DoxyParams}{Parameters}
+{\em messages} & vector \\
+\hline
+{\em count} & lentgth of vector \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_queue_a546d9a23753d4f544fce3676e6fb58b4}\index{Queue@{Queue}!get\_chats@{get\_chats}}
+\index{get\_chats@{get\_chats}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{get\_chats()}{get\_chats()}}
+{\footnotesize\ttfamily \label{class_queue_a546d9a23753d4f544fce3676e6fb58b4} 
+const \mbox{\hyperlink{class_message}{Message}} \texorpdfstring{$\ast$}{*} Queue\+::get\+\_\+chats (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+function of getting queue array with Messages 
+
+\begin{DoxyReturn}{Returns}
+chats 
+\end{DoxyReturn}
+\Hypertarget{class_queue_a4b786d223a7f57f684be88713296dfd9}\index{Queue@{Queue}!get\_head@{get\_head}}
+\index{get\_head@{get\_head}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{get\_head()}{get\_head()}}
+{\footnotesize\ttfamily \label{class_queue_a4b786d223a7f57f684be88713296dfd9} 
+int Queue\+::get\+\_\+head (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+function of getting head 
+
+\begin{DoxyReturn}{Returns}
+queue head 
+\end{DoxyReturn}
+\Hypertarget{class_queue_a82229977796c1a703f335c7e997d4872}\index{Queue@{Queue}!get\_max\_size@{get\_max\_size}}
+\index{get\_max\_size@{get\_max\_size}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{get\_max\_size()}{get\_max\_size()}}
+{\footnotesize\ttfamily \label{class_queue_a82229977796c1a703f335c7e997d4872} 
+int Queue\+::get\+\_\+max\+\_\+size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+function of getting max size of queue array 
+
+\begin{DoxyReturn}{Returns}
+max size 
+\end{DoxyReturn}
+\Hypertarget{class_queue_a45190461e94c3d48fd64def42a0ff15a}\index{Queue@{Queue}!get\_size@{get\_size}}
+\index{get\_size@{get\_size}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{get\_size()}{get\_size()}}
+{\footnotesize\ttfamily \label{class_queue_a45190461e94c3d48fd64def42a0ff15a} 
+int Queue\+::get\+\_\+size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+function of getting size of queue 
+
+\begin{DoxyReturn}{Returns}
+queue size 
+\end{DoxyReturn}
+\Hypertarget{class_queue_accf2a200a2e8dfdfdf4d169546d180aa}\index{Queue@{Queue}!get\_tail@{get\_tail}}
+\index{get\_tail@{get\_tail}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{get\_tail()}{get\_tail()}}
+{\footnotesize\ttfamily \label{class_queue_accf2a200a2e8dfdfdf4d169546d180aa} 
+int Queue\+::get\+\_\+tail (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+function of getting tail 
+
+\begin{DoxyReturn}{Returns}
+queue tail 
+\end{DoxyReturn}
+\Hypertarget{class_queue_a6d419c002771df94087c32cbd094ca01}\index{Queue@{Queue}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \label{class_queue_a6d419c002771df94087c32cbd094ca01} 
+\mbox{\hyperlink{class_queue}{Queue}} \& Queue\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_message}{Message}} \&}]{rsh}{}\end{DoxyParamCaption})}
+
+
+
+add new \doxylink{class_message}{Message} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rsh} & the second operand \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+changed queue 
+\end{DoxyReturn}
+\Hypertarget{class_queue_a9ecdaf2ca43a075eef1e93057fc7e339}\index{Queue@{Queue}!operator=@{operator=}}
+\index{operator=@{operator=}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_queue_a9ecdaf2ca43a075eef1e93057fc7e339} 
+\mbox{\hyperlink{class_queue}{Queue}} \& Queue\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_queue}{Queue}} \&}]{queue}{}\end{DoxyParamCaption})}
+
+
+
+Copying an instance of a complex class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & the queue from which the data is written \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+modified queue 
+\end{DoxyReturn}
+\Hypertarget{class_queue_ab68e712b015695c45ccd35c1ddbc7b4a}\index{Queue@{Queue}!operator=@{operator=}}
+\index{operator=@{operator=}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_queue_ab68e712b015695c45ccd35c1ddbc7b4a} 
+\mbox{\hyperlink{class_queue}{Queue}} \& Queue\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_queue}{Queue}} \&\&}]{queue}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+the moving operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+changed queue 
+\end{DoxyReturn}
+\Hypertarget{class_queue_ae28fb9b8935aa11e9746a5b4cdaa8a87}\index{Queue@{Queue}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \label{class_queue_ae28fb9b8935aa11e9746a5b4cdaa8a87} 
+\mbox{\hyperlink{class_queue}{Queue}} Queue\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{chat\+\_\+name}{}\end{DoxyParamCaption})}
+
+
+
+combine messages from the same chat into new queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chat\+\_\+name} & the name of chat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new queue 
+\end{DoxyReturn}
+\Hypertarget{class_queue_a18f437f8fc3da503cc554fefa4f120b9}\index{Queue@{Queue}!pop@{pop}}
+\index{pop@{pop}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{class_queue_a18f437f8fc3da503cc554fefa4f120b9} 
+\mbox{\hyperlink{class_message}{Message}} Queue\+::pop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reading message. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error()} & if the queue is empty \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Read message 
+\end{DoxyReturn}
+\Hypertarget{class_queue_a89a8e2647a92a36df8072aca587ca481}\index{Queue@{Queue}!reorganization@{reorganization}}
+\index{reorganization@{reorganization}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{reorganization()}{reorganization()}}
+{\footnotesize\ttfamily \label{class_queue_a89a8e2647a92a36df8072aca587ca481} 
+\mbox{\hyperlink{class_queue}{Queue}} Queue\+::reorganization (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+combining messages from the same chat 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error()} & if the queue is empty \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+new queue 
+\end{DoxyReturn}
+\Hypertarget{class_queue_a8ce247186a505400ea62448590463046}\index{Queue@{Queue}!set\_chats@{set\_chats}}
+\index{set\_chats@{set\_chats}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{set\_chats()}{set\_chats()}}
+{\footnotesize\ttfamily \label{class_queue_a8ce247186a505400ea62448590463046} 
+void Queue\+::set\+\_\+chats (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_message}{Message}} \texorpdfstring{$\ast$}{*}}]{new\+\_\+chats}{, }\item[{int}]{count}{}\end{DoxyParamCaption})}
+
+
+
+function which set new chats-\/array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+chats} & new array \\
+\hline
+{\em count} & number of elements in new array \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_queue_a7ff83fbb358213bc180a8a567c5f049a}\index{Queue@{Queue}!set\_head@{set\_head}}
+\index{set\_head@{set\_head}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{set\_head()}{set\_head()}}
+{\footnotesize\ttfamily \label{class_queue_a7ff83fbb358213bc180a8a567c5f049a} 
+void Queue\+::set\+\_\+head (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+head}{}\end{DoxyParamCaption})}
+
+
+
+function which set new head of queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+head} & new head of queue \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_queue_a175afd62fb1faed265f9976791828ad4}\index{Queue@{Queue}!set\_max\_size@{set\_max\_size}}
+\index{set\_max\_size@{set\_max\_size}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{set\_max\_size()}{set\_max\_size()}}
+{\footnotesize\ttfamily \label{class_queue_a175afd62fb1faed265f9976791828ad4} 
+void Queue\+::set\+\_\+max\+\_\+size (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+size}{}\end{DoxyParamCaption})}
+
+
+
+function which set new max size of queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+size} & new max size of queue \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_queue_ad52f0d3fb0ece6d43ee0477db1398c2d}\index{Queue@{Queue}!set\_size@{set\_size}}
+\index{set\_size@{set\_size}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{set\_size()}{set\_size()}}
+{\footnotesize\ttfamily \label{class_queue_ad52f0d3fb0ece6d43ee0477db1398c2d} 
+void Queue\+::set\+\_\+size (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+size}{}\end{DoxyParamCaption})}
+
+
+
+function which set new size of queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+size} & new size of queue \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_queue_a65f507d16c51f19af147178d8bab496a}\index{Queue@{Queue}!set\_tail@{set\_tail}}
+\index{set\_tail@{set\_tail}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{set\_tail()}{set\_tail()}}
+{\footnotesize\ttfamily \label{class_queue_a65f507d16c51f19af147178d8bab496a} 
+void Queue\+::set\+\_\+tail (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+tail}{}\end{DoxyParamCaption})}
+
+
+
+function which set new tail of queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+tail} & new tail of queue \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_queue_a62c5106a0b3f0e418795867f2570e75a}\index{Queue@{Queue}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_queue_a62c5106a0b3f0e418795867f2570e75a} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{, }\item[{\mbox{\hyperlink{class_queue}{Queue}} \&}]{queue}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Output queue class operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & output stream \\
+\hline
+{\em queue} & the queue from which the data is written \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+output steam 
+\end{DoxyReturn}
+\Hypertarget{class_queue_a8b1d33c58d371cee3bfdc3e4af8d320c}\index{Queue@{Queue}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily \label{class_queue_a8b1d33c58d371cee3bfdc3e4af8d320c} 
+std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in}{, }\item[{\mbox{\hyperlink{class_queue}{Queue}} \&}]{queue}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Input queue class operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & input stream \\
+\hline
+{\em queue} & the queue in which the data is written \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+input steam 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+queue.\+h\item 
+in\+\_\+out\+\_\+put.\+cpp\item 
+queue.\+cpp\end{DoxyCompactItemize}
